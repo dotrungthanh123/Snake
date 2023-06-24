@@ -37,7 +37,7 @@ public class Snake : MonoBehaviour
             _dir = Vector3.right;
         else if (Input.GetKeyDown(KeyCode.LeftArrow))
             _dir = Vector3.left;
-        if (_dir + _direction != Vector3.zero)
+        if (_dir + _direction != Vector3.zero && _dir + _direction != Vector3.left)
             _direction = _dir;
     }
 
